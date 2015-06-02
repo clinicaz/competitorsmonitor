@@ -10,7 +10,7 @@ ASINS = ["B0018AA9CU","B0018A7F8Q","B000KNFR2S","B00112VEA6","B000CO89T8"]
 summary = ""
 
 for asin in ASINS:
-    url = "http://www.amazon.com/dp/"+asin
+    url = "samsung-galaxy-a3.aspxmedia="all""+asin
     html = scraperwiki.scrape(url)
     root = lxml.html.fromstring(html)
     for title in root.cssselect("span[id='btAsinTitle']"):  
